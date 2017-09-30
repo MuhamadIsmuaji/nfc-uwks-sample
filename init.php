@@ -1,8 +1,8 @@
 <?php
 
-$f = popen('python /var/www/nfcuwks/python_script/own_reader.py', 'r');
+$f = popen('python python_script/own_reader.py', 'r');
 if ($f === false) {
-   echo "popen failed";
+    echo "popen failed";
 }
 
 $json = fgets($f);
